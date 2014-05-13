@@ -307,6 +307,12 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.link-arrow {
+  vertical-align: middle;
+  font-size: 0.76rem;
+  position: relative;
+  bottom: 1px;
+}
 h4 {
   font-size: 1.5rem;
   text-transform: uppercase;
