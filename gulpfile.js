@@ -21,7 +21,7 @@ function runServer() {
     }).listen(8000);
 }
 
-var gitRemoteUrl = "https://github.com/gopilot/Oxy.git"
+var gitRemoteUrl = "https://github.com/gopilot/oxy.git"
 
 gulp.task('deploy', function () {
     return gulp.src("./out/**/*")
