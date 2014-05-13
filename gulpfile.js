@@ -21,7 +21,7 @@ function runServer() {
     }).listen(8000);
 }
 
-var gitRemoteUrl = "https://github.com/gopilot/pdx.git"
+var gitRemoteUrl = "https://github.com/gopilot/Oxy.git"
 
 gulp.task('deploy', function () {
     return gulp.src("./out/**/*")
@@ -56,6 +56,8 @@ gulp.task('html', function() {
 gulp.task('default', function(){
     gulp.run('stylus');
     gulp.run('html');
+    var locals = jsyaml.load(fs.readFileSync('./info.yaml', 'utf8')); // load yaml
+    fs.writeFileSync("out/CNAME", locals.gh_url); // update CNAME file
 });
 
 // copy over everything from the static folder (images, etc)

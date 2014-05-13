@@ -1,10 +1,11 @@
-title: PilotPDX
-city: Portland
+title: PilotOxy
+gh_url: oxy.gopilot.org
+city: Los Angeles
 date:
     display: April 26
 location:
-    name: Jesuit High School
-register_link: http://pilotpdx.eventbrite.com
+    name: Occidental College
+register_link: http://pilotoxy.eventbrite.com
 mentor_doc: /sponsorship.pdf
 hours_long: 12
 schedule:
@@ -15,9 +16,9 @@ schedule:
     6:00pm: Dinner
     7:00pm: Project work ends, judging begins
     8:00pm: Closing ceremony & awards
-    9:00pm: End of PilotPDX
+    9:00pm: End of PilotOxy
     9:30pm: All attendees must be signed out
 analytics: UA-43652846-3
 facebook_event: https://www.facebook.com/events/1463530917197699/
-share_url: http://pdx.gopilot.org/
-tweet_text: "I'm going to #PilotPDX on April 26! You should join me: "
+share_url: http://oxy.gopilot.org/
+tweet_text: "I'm going to #PilotOxy on April 26! You should join me: "

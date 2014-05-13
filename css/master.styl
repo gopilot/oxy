@@ -98,6 +98,12 @@ a
     text-decoration none
     color inherit
 
+.link-arrow
+    vertical-align middle
+    font-size: sizes.small
+    relative bottom 1px
+
+
 h4
     font-size: sizes.large
     text-transform uppercase
@@ -213,6 +219,12 @@ hr
         background: rgba(colors.blue, .9)
         color: white
 
+        a
+            border-bottom 1px solid rgba(white, .5)
+
+            &:hover
+                border-bottom-color white
+
     &.slate
         background: colors.slate
         color: white
@@ -278,11 +290,20 @@ hr
             padding-bottom: (p / 2.1)
             padding-top: (p / 1.9)
 
+        &:active
+            background: rgba(colors.blue, .9)
+            padding-bottom: (p / 2.1)
+            padding-top: (p / 1.9)
+            transition background .1s
+
         &:last-child
             border-right none
 
 
-/* Section specific styles/map sections to types above */
+/* Section specific styles/map sections to helpers above */
+/* TODO break these all out into individual components */
+
+
 
 .faq
     h5 + p
@@ -305,9 +326,12 @@ hr
             padding 3%
             display inline-block
             text-align center
+            a
+                border-bottom none
             img
                 width 90%
                 height auto
+                vertical-align middle
 
 
 @import _mq
