@@ -54,6 +54,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('default', function(){
+    gulp.run('static');
     gulp.run('stylus');
     gulp.run('html');
     var locals = jsyaml.load(fs.readFileSync('./info.yaml', 'utf8')); // load yaml
